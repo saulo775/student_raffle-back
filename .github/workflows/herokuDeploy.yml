@@ -10,9 +10,9 @@ jobs:
       - name: Check out repository branch
         uses: actions/checkout@v3
       - name: Deploy on heroku
-              uses: akhileshns/heroku-deploy@v3.12.12
-              with: 
-                heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-                heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
-                heroku_email: ${{secrets.HEROKU_EMAIL}}
-                branch: "master"
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with: 
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          branch: "master"
